@@ -5,8 +5,11 @@
 }
 
 html, body {
-    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    font-family: 'Avenir Next Condensed', 'Source Sans Pro', Arial, Helvetica, sans-serif;
     background: #f4f7fd;
+    overflow: hidden;
+    width: 100vw;
+    overflow-y: scroll;
 }
 header{
     position: fixed;
@@ -218,6 +221,10 @@ header .menu .dropdown .sub-menu a{
    display: block;
 }
 
+#horizontal-sale{
+    /* margin-bottom: 50px; */
+}
+
 #horizontal-sale .overlay{
     height: 100%;
     width: 100%;
@@ -256,4 +263,56 @@ header .menu .dropdown .sub-menu a{
 #horizontal-sale .overlay a:hover{
     color: black;
     background: #ffff00;
+}
+
+#products-group{
+    padding: 50px 0 0 0;
+}
+#products-group div[class*="col"]{
+    margin-bottom: 50px;
+}
+
+#products-group h2{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+#products-group .product-bg{
+    background: white;
+    height: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 50px;
+}
+#products-group .product-img{
+    width: 80%;
+}
+#products-group .overlay{
+    background: #1b1b1b;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all .2s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    color: #ffff00
+}
+#products-group .overlay:hover{
+    opacity: 1;
+}
+#products-group .overlay .product-title{
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+#products-group .overlay .product-price{
+    font-weight: 700;
 }
