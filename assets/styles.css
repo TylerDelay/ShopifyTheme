@@ -69,6 +69,7 @@ header .menu .dropdown .sub-menu a{
     width: 100%;
     position: relative;
     margin-bottom: 25px;
+    overflow: hidden;
 }
 #jumbo .bg-image{
     background: url("jumbobg.jpg");
@@ -80,6 +81,14 @@ header .menu .dropdown .sub-menu a{
     position: absolute;
     z-index: 1;
     top: 0;
+}
+#jumbo .bg-video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    transform: scale(1.5);
 }
 #jumbo .transparent-color{
     background: rgba(66,53,88, .8);
@@ -315,4 +324,48 @@ header .menu .dropdown .sub-menu a{
 }
 #products-group .overlay .product-price{
     font-weight: 700;
+}
+
+footer{
+    background: #1b1b1b;
+    padding: 50px 0 ;
+}
+footer .footer-menu .menu-title, footer .social-title{
+    color: #ffff00;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
+}
+footer .footer-menu a{
+    color: white;
+    
+}
+footer .social-icons {
+    display: flex;
+}
+footer .social-icons li {
+    margin-right: 15px;
+}
+footer .social-icons a{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+    transition: all .3s ease-in-out;
+}
+footer .social-icons a:hover{
+    color: #ffff00;
+    background: black;
+}
+footer .address{
+    color: #dddfe4;
+    text-align: center;
+    display: block;
 }
